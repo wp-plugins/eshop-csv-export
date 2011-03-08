@@ -3,8 +3,8 @@ Contributors: paulswebsolutions
 Donate link: http://csv-imp.paulswebsolutions.com
 Tags: eshop, csv, import, export, bulk, batch, products
 Requires at least: 2.9.2
-Tested up to: 3.0.5
-Stable tag: 1.0
+Tested up to: 3.1
+Stable tag: 1.1
 
 Export your eShop products to CSV.  Easily manage up to 10000+ eShop products.
 
@@ -33,8 +33,11 @@ eShop CSV Export is a very simple one page plugin so no screenshot required. How
 
 == Changelog ==
 
+= 1.1 =
+* Compatible with Wordpress 3.1
+* Improved CSV download code to cope with variable mime type support
+
 = 1.0 =
 * Initial version allowing the export of eShop products to CSV.
 
 == Upgrade Notice ==
-

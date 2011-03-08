@@ -43,7 +43,6 @@ class CSV {
 	function saveToFile( $csv_data = array( ), $filename = 'csvdata', $path = '/tmp' ) {
 
 		if ( isset( $csv_data[0] ) ) {
-			
 			$fullpath = $path . '/' . $filename . '.csv';
 			$fp = @fopen( $fullpath, 'w' );
 			if ( $fp ) {
