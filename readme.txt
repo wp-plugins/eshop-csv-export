@@ -41,3 +41,8 @@ eShop CSV Export is a very simple one page plugin so no screenshot required. How
 * Initial version allowing the export of eShop products to CSV.
 
 == Upgrade Notice ==
+
+= 1.1 =
+* Tested with Wordpress 3.1
+* Improved CSV download code to cope with variable mime type support
+
