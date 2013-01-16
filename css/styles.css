@@ -1,3 +1,7 @@
+fieldset {
+	border: 1px solid black;
+}
+
 table.ecsvi {
 	text-align: left;
 	border: 1px solid black;

@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: eShop CSV Export
-Plugin URI: http://csv-imp.paulswebsolutions.com/eshop-csv-export
+Plugin URI: http://cpkwebsolutions.com/plugins/eshop-csv-export
 Description: Export all your eShop products into a single CSV file.
-Version: 1.1
-Author: Paul's Web Solutions
-Author URI: http://www.paulswebsolutions.com
+Version: 1.2
+Author: CPK Web Solutions
+Author URI: http://www.cpkwebsolutions.com
 
-    Copyright 2007-2011  Paul's Web Solutions (email: paul@paulswebsolutions.com)
+    Copyright 2007-2011  CPK Web Solutions (email: paul@cpkwebsolutions.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
