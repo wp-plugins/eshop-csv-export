@@ -17,7 +17,7 @@
 			$postmeta_table = $wpdb->prefix . 'postmeta';
 			$post_fields = implode( ", ", $this->post_fields );
 			$sql = $wpdb->prepare( "SELECT DISTINCT $post_fields, m.meta_value FROM 
-							$posts_table, $postmeta_table as m WHERE post_status in ('publish','future') AND ID = m.post_id AND m.meta_key = '_eshop_product' ORDER BY post_modified DESC" );
+							$posts_table, $postmeta_table as m WHERE post_status in ('publish','future') AND ID = m.post_id AND m.meta_key = '_eshop_product' ORDER BY post_modified DESC", 'm.post_id' );
 
 			$posts = $wpdb->get_results( $sql );
 
@@ -42,7 +42,7 @@ if ( $this->pwsd ) print_r( $custom_fields );
 				$meta_array = array( );
 
 				foreach ( $custom_fields as $cf ) {
-					$sql = $wpdb->prepare( "SELECT post_id, meta_value FROM $postmeta_table WHERE meta_key = '$cf'" );
+					$sql = $wpdb->prepare( "SELECT post_id, meta_value FROM $postmeta_table WHERE meta_key = '%s'", $cf );
 					$results = $wpdb->get_results( $sql, 'OBJECT_K' );
 					$meta_array[$cf] = $results;
 				}
